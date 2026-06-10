@@ -103,14 +103,15 @@
     min-height: 320px;
     background: linear-gradient(160deg, #0a0a1e 0%, #1a0a2e 40%, #0a1a0e 100%);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    padding: 30px 20px 20px;
-    overflow: hidden;
+    padding: 30px 20px 40px;
+    overflow: visible;
     text-align: center;
   }
   .hero::before {
     content: '';
     position: absolute; inset: 0;
     background: radial-gradient(ellipse at 50% 0%, rgba(255,215,0,0.08) 0%, transparent 70%);
+    pointer-events: none;
   }
   .world-cup-badge {
     background: linear-gradient(135deg, rgba(255,215,0,0.15), rgba(255,165,0,0.1));
@@ -138,6 +139,7 @@
   }
   .hero-cta {
     display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+    position: relative; z-index: 10;
   }
   .cta-primary {
     padding: 14px 32px; border-radius: 30px;
@@ -147,6 +149,8 @@
     box-shadow: 0 4px 20px rgba(255,140,0,0.5);
     letter-spacing: 1px;
     animation: ctaGlow 2s ease-in-out infinite;
+    position: relative; z-index: 10;
+    display: inline-block;
   }
   @keyframes ctaGlow {
     0%,100%{box-shadow:0 4px 20px rgba(255,140,0,0.5);}
@@ -158,6 +162,8 @@
     border: 1.5px solid rgba(255,255,255,0.3);
     color: #fff; font-size: 15px; font-weight: 700;
     text-decoration: none;
+    position: relative; z-index: 10;
+    display: inline-block;
   }
 
   /* Football decorations */
@@ -501,8 +507,8 @@
   <h1>日日返水<br><em>最高 2.88%</em></h1>
   <p class="hero-sub">每日遊玩送豪禮<br>最高 <strong style="color:var(--gold)">2688</strong> 彩金等你拿</p>
   <div class="hero-cta">
-    <a href="https://www.db5858.com/" class="cta-primary" target="_blank">🎁 立即領取優惠</a>
-    <a href="https://www.db5858.com/" class="cta-secondary" target="_blank">了解更多</a>
+    <a href="https://97y.me/Gnp5j" class="cta-primary" target="_blank">🎁 立即領取優惠</a>
+    <a href="https://97y.me/Gnp5j" class="cta-secondary" target="_blank">了解更多</a>
   </div>
 </section>
 
